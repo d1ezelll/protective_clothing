@@ -246,6 +246,11 @@ body {
     border-radius: 120px;
 }
 
+.header-nav-item:hover {
+    opacity: 0.7;
+}
+
+
 .header-nav-item-link {
     list-style: none;
     color: var(--white-color);
@@ -267,6 +272,10 @@ body {
     column-gap: 20px;
 }
 
+.header-contact-button:hover {
+    opacity: 0.7;
+}
+
 .header-contact-button-text {
     font-family: var(--custom-font);
     font-size: 18px;
@@ -283,6 +292,10 @@ body {
     color: var(--white-color);
     padding: 5px 5px 5px 30px;
     column-gap: 20px;
+}
+
+.header-contact-menu-button:hover {
+    opacity: 0.7;
 }
 
 .header-info {
@@ -396,6 +409,10 @@ body {
     max-width: 155px;
 }
 
+.intro-contact-button:hover {
+    opacity: 0.7;
+}
+
 .intro-contact-button-text {
     font-family: var(--custom-font);
     font-size: 18px;
@@ -473,6 +490,10 @@ body {
     max-width: 155px;
 }
 
+.about-us-contact-button:hover {
+    opacity: 0.7;
+}
+
 .about-us-contact-button-text {
     font-family: var(--custom-font);
     font-size: 18px;
@@ -533,6 +554,10 @@ body {
     padding: 5px 5px 5px 30px;
     column-gap: 20px;
     max-width: 155px;
+}
+
+.services-contact-button:hover {
+    opacity: 0.7;
 }
 
 .services-contact-button-text {
@@ -805,6 +830,10 @@ body {
     -webkit-appearance: none;
 }
 
+.contact-form-button:hover {
+    opacity: 0.7;
+}
+
 .contact-form-button-text {
     font-family: var(--custom-font);
     font-size: 18px;
@@ -957,6 +986,10 @@ body {
     padding: 15px 30px;
     border: none;
     border-radius: 120px;
+}
+
+.footer-nav-item:hover {
+    opacity: 0.7;
 }
 
 .footer-nav-item-link {
