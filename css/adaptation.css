@@ -322,7 +322,7 @@
     .footer-info {
         flex-direction: column;
         row-gap: 20px;
-        width: 70vw;
+        width: 85vw;
 
     }
     
@@ -331,6 +331,7 @@
         flex-wrap: nowrap;
         justify-content: space-between;
         margin-top: 20px;
+        width: 100%;
     }
     
     .footer-info-right {
@@ -362,11 +363,11 @@
     }
 
     .footer-info-left .footer-info-item:nth-of-type(2) {
-        margin-top: 50px;
+        margin-top: 70px;
     }
 
     .footer-info-left .footer-info-item:nth-of-type(3) {
-        margin-top: 50px;
+        margin-top: 70px;
     }
 }
 
