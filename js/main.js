@@ -34,4 +34,9 @@ document.addEventListener('DOMContentLoaded', () => {
             headerMenu.style.marginLeft = "3vw";
         }
     });
+
+    document.getElementById('ccontactFormButton').addEventListener('click', function() {
+        document.getElementById('contactForm').reset();
+      }
+    );
 })
