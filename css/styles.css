@@ -1,0 +1,995 @@
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../fonts/SFProDisplay-BlackItalic.woff2') format('woff2');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../fonts/SFProDisplay-MediumItalic.woff2') format('woff2');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../fonts/SFProDisplay-RegularItalic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../fonts/SFProDisplay-HeavyItalic.woff2') format('woff2');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../fonts/SFProDisplay-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../fonts/SFProDisplay-BoldItalic.woff2') format('woff2');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../fonts/SFProDisplay-LightItalic.woff2') format('woff2');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../fonts/SFProDisplay-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../fonts/SFProDisplay-Light.woff2') format('woff2');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../fonts/SFProDisplay-SemiboldItalic.woff2') format('woff2');
+    font-weight: 600;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../fonts/SFProDisplay-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../fonts/SFProDisplay-Heavy.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../fonts/SFProDisplay-Black.woff2') format('woff2');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../fonts/SFProDisplay-Semibold.woff2') format('woff2');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../fonts/SFProDisplay-ThinItalic.woff2') format('woff2');
+    font-weight: 100;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../fonts/SFProDisplay-UltralightItalic.woff2') format('woff2');
+    font-weight: 200;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../fonts/SFProDisplay-Ultralight.woff2') format('woff2');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url('../fonts/SFProDisplay-Thin.woff2') format('woff2');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    --full-background-color: rgba(226, 230, 242, 1);
+    --black-color: rgba(28, 28, 28, 1);
+    --gray-color: rgba(95, 95, 95, 1);
+    --blue-color: rgba(44, 47, 251, 1);
+    --white-color: rgba(255, 255, 255, 1);
+    --custom-font: SF Pro Display;
+}
+
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    overflow-x: hidden;
+}
+
+body {
+    background: rgba(226, 230, 242, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+/* Header styles start */
+
+#header-contact-menu-button {
+    display: none;
+}
+
+.header {
+    position: absolute;
+    padding: 30px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+
+.header-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 90vw;
+}
+
+.header-left {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    column-gap: 15vw;
+}
+
+.header-logo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.header-logo-texts {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.header-logo-name {
+    font-family: SF Pro Display;
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--black-color);
+}
+
+.header-logo-company {
+    font-family: SF Pro Display;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--gray-color);
+}
+
+.header-nav {
+    display: flex;
+    flex-wrap: nowrap;
+    column-gap: 1px;
+}
+
+.header-nav-item {
+    text-decoration: none;
+    background: var(--black-color);
+    padding: 15px 30px;
+    border: none;
+    border-radius: 120px;
+}
+
+.header-nav-item-link {
+    list-style: none;
+    color: var(--white-color);
+    font-family: var(--custom-font);
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.header-contact-button {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    background: var(--black-color);
+    border: none;
+    border-radius: 120px;
+    text-decoration: none;
+    color: var(--white-color);
+    padding: 5px 5px 5px 30px;
+    column-gap: 20px;
+}
+
+.header-contact-button-text {
+    font-family: var(--custom-font);
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.header-contact-menu-button {
+    flex-wrap: nowrap;
+    align-items: center;
+    background: var(--black-color);
+    border: none;
+    border-radius: 120px;
+    text-decoration: none;
+    color: var(--white-color);
+    padding: 5px 5px 5px 30px;
+    column-gap: 20px;
+}
+
+.header-info {
+    display: none;
+    flex-direction: column;
+    row-gap: 20px;
+    width: 70vw;
+    margin-top: 50vh;
+}
+
+.header-info-left {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.header-info-right {
+    display: flex;
+    flex-wrap: nowrap;
+    column-gap: 20px;
+}
+
+.header-info-item-partner {
+    text-decoration: none;
+}
+
+.header-info-item-title {
+    font-family: var(--custom-font);
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--gray-color);
+}
+
+.header-info-item-text {
+    font-family: var(--custom-font);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--black-color);
+}
+
+/* Header styles end */
+
+
+/* Intro styles start */
+
+.intro {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    width: 100vw;
+}
+
+.intro-container {
+    background: var(--white-color);
+    border: none;
+    border-radius: 60px;
+    padding: 200px 60px 60px 60px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 92vw;
+}
+
+.intro-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 688px;
+    margin-top: 50px;
+}
+
+.intro-left-picture {
+    display: none;
+}
+
+.intro-title {
+    font-family: var(--custom-font);
+    font-size: 72px;
+    font-weight: 400;
+    color: var(--black-color);
+    line-height: 67px;
+}
+
+.intro-title span {
+    color: var(--blue-color);
+}
+
+.intro-text {
+    font-family: var(--custom-font);
+    color: var(--black-color);
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 150px;
+}
+
+.intro-contact-button {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--black-color);
+    border: none;
+    border-radius: 120px;
+    text-decoration: none;
+    color: var(--white-color);
+    padding: 5px 5px 5px 30px;
+    column-gap: 20px;
+    max-width: 155px;
+}
+
+.intro-contact-button-text {
+    font-family: var(--custom-font);
+    font-size: 18px;
+    font-weight: 400;
+}
+
+/* Intro styles end */
+
+
+/* About Us start */
+
+.about-us {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    width: 100vw;
+}
+
+.about-us-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 92vw;
+    padding-top: 100px;
+}
+
+.about-us-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    max-width: 550px;
+}
+
+.about-us-left-picture {
+    display: none;
+}
+
+.about-us-title {
+    font-family: var(--custom-font);
+    font-size: 72px;
+    font-weight: 400;
+    line-height: 75px;
+    text-transform: uppercase;
+    color: var(--black-color);
+}
+
+.about-us-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.about-us-text {
+    font-family: var(--custom-font);
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--gray-color);
+}
+
+.about-us-contact-button {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--black-color);
+    border: none;
+    border-radius: 120px;
+    text-decoration: none;
+    color: var(--white-color);
+    padding: 5px 5px 5px 30px;
+    column-gap: 20px;
+    max-width: 155px;
+}
+
+.about-us-contact-button-text {
+    font-family: var(--custom-font);
+    font-size: 18px;
+    font-weight: 400;
+}
+
+/* About Us end */
+
+
+/* Services styles start */
+
+.services {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    width: 100vw;
+    padding-bottom: 50px;
+}
+
+.services-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 92vw;
+    padding-top: 100px;
+    row-gap: 20px;
+}
+
+.services-top {
+    width: 100%;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.services-title {
+    font-family: var(--custom-font);
+    font-size: 72px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: var(--black-color);
+}
+
+.services-contact-button{
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--black-color);
+    border: none;
+    border-radius: 120px;
+    text-decoration: none;
+    color: var(--white-color);
+    padding: 5px 5px 5px 30px;
+    column-gap: 20px;
+    max-width: 155px;
+}
+
+.services-contact-button-text {
+    font-family: var(--custom-font);
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.services-grid {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    row-gap: 15px;
+}
+
+.services-grid-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    column-gap: 10px;
+}
+
+.services-grid-top-item {
+    position: relative;
+    background: var(--white-color);
+    border: none;
+    border-radius: 30px;
+    padding: 30px;
+    height: 472px;
+    overflow: hidden;
+}
+
+.services-grid-top-item:nth-of-type(1),
+.services-grid-top-item:nth-of-type(3) {
+    width: 25%;
+}
+
+.services-grid-top-item:nth-of-type(2) {
+    width: 50%;
+}
+
+.services-grid-top-item-title {
+    position: relative;
+    font-family: var(--custom-font);
+    font-size: 50px;
+    font-weight: 400;
+    color: var(--black-color);
+    z-index: 3;
+}
+
+.services-grid-top-item img {
+    z-index: 1;
+}
+
+/* Design and branding */
+.services-grid-top-item:nth-of-type(1) .services-grid-top-item-img {
+    position: absolute;
+    bottom: 0;
+}
+
+
+/* Individual tailoring of workwear */
+.services-grid-top-item:nth-of-type(2) .services-grid-top-item-img:nth-of-type(1) {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/* Individual tailoring of workwear */
+.services-grid-top-item:nth-of-type(2) .services-grid-top-item-img:nth-of-type(2) {
+    position: absolute;
+    top: 15%;
+    right: 25%;
+}
+
+/* Individual tailoring of workwear */
+.services-grid-top-item:nth-of-type(2) .services-grid-top-item-img:nth-of-type(3) {
+    position: absolute;
+    bottom: 0;
+    right: -3%;
+}
+
+/* Consultations on the choice of materials */
+.services-grid-top-item:nth-of-type(3) .services-grid-top-item-img {
+    position: absolute;
+    bottom: 0;
+}
+
+
+
+.services-grid-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    column-gap: 20px;
+}
+
+.services-grid-bottom-item {
+    position: relative;
+    background: var(--white-color);
+    border: none;
+    border-radius: 30px;
+    padding: 30px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.services-grid-bottom-item-title {
+    position: relative;
+    font-family: var(--custom-font);
+    font-size: 50px;
+    font-weight: 400;
+    color: var(--black-color);
+    z-index: 3;
+}
+
+.services-grid-bottom-item img {
+    z-index: 1;
+}
+
+.services-grid-bottom-item {
+    width: 30%;
+}
+    
+/* Mass production and delivery */
+.services-grid-bottom-item:nth-of-type(1) .services-grid-bottom-item-img {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+
+
+/* Maintenance and repair */
+.services-grid-bottom-item:nth-of-type(2) .services-grid-bottom-item-img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+}
+
+/* Consultations on safety standards */
+.services-grid-bottom-item:nth-of-type(3) .services-grid-bottom-item-img:nth-of-type(1) {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+/* Consultations on safety standards */
+.services-grid-bottom-item:nth-of-type(3) .services-grid-bottom-item-img:nth-of-type(2) {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+/* Services styles end */
+
+
+/* Contact styles start */
+
+.contact {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    width: 100vw;
+}
+
+.contact-container {
+    background: var(--white-color);
+    border: none;
+    border-radius: 60px;
+    padding: 40px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    width: 87vw;
+}
+
+.contact-left {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 30px;
+}
+
+.contact-title {
+    font-family: var(--custom-font);
+    font-size: 72px;
+    font-weight: 400;
+    color: var(--black-color);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.contact-form-item {
+    display: flex;
+    flex-direction: column;
+    background: var(--full-background-color);
+    border-radius: 30px;
+    padding: 20px 30px;
+}
+
+.contact-form-item input,
+.contact-form-item textarea {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    background: none;
+    border: none;
+    font-family: var(--custom-font);
+    font-size: 18px;
+    outline: none;
+}
+
+.contact-form-item textarea {
+    min-height: 160px;
+}
+
+.contact-form-item label{
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    font-family: var(--custom-font);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--gray-color);
+}
+
+.contact-form-item input::placeholder, 
+.contact-form-item textarea::placeholder {
+    color: var(--black-color);
+    font-family: var(--custom-font);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.contact-form-button {
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--black-color);
+    border: none;
+    border-radius: 120px;
+    text-decoration: none;
+    color: var(--white-color);
+    padding: 5px 5px 5px 30px;
+    column-gap: 20px;
+    width: 100%;
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
+.contact-form-button-text {
+    font-family: var(--custom-font);
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.contact-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 30px;
+}
+
+.contact-right-bottom {
+    display: flex;
+    flex-wrap: nowrap;
+    column-gap: 20px;
+}
+
+.contact-right-bottom-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-right-bottom-item-title {
+    font-family: var(--custom-font);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--gray-color);
+}
+
+.contact-right-bottom-item-text {
+    font-family: var(--custom-font);
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--black-color);
+}
+
+/* Contact styles end */
+
+/* Footer styles start */
+
+.footer {
+    margin-top: 100px;
+    position: relative;
+    background: var(--white-color);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-container {
+    padding-top: 50px;
+    padding-bottom: 30px;
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    row-gap: 50px;
+}
+
+.footer-face {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.footer-info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+}
+
+.footer-info-left {
+    display: flex;
+    flex-wrap: nowrap;
+    column-gap: 20px;
+}
+
+.footer-info-item {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-info-item-title {
+    font-family: var(--custom-font);
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--gray-color);
+}
+
+.footer-info-item-text {
+    font-family: var(--custom-font);
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--black-color);
+}
+
+.footer-info-right {
+    display: flex;
+    flex-wrap: nowrap;
+    column-gap: 10px;
+}
+
+.footer-info-item-partner {
+    text-decoration: none;
+}
+
+.footer-logo {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    column-gap: 15px;
+}
+
+.footer-logo-texts {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.footer-logo-name {
+    font-family: SF Pro Display;
+    font-size: 24px;
+    font-weight: 500;
+    color: var(--black-color);
+}
+
+.footer-logo-company {
+    font-family: SF Pro Display;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--gray-color);
+}
+
+.footer-nav {
+    display: flex;
+    flex-wrap: nowrap;
+    column-gap: 1px;
+}
+
+.footer-nav-item {
+    text-decoration: none;
+    background: var(--black-color);
+    padding: 15px 30px;
+    border: none;
+    border-radius: 120px;
+}
+
+.footer-nav-item-link {
+    list-style: none;
+    color: var(--white-color);
+    font-family: var(--custom-font);
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.footer-contact-button {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    background: var(--black-color);
+    border: none;
+    border-radius: 120px;
+    text-decoration: none;
+    color: var(--white-color);
+    padding: 5px 5px 5px 30px;
+    column-gap: 20px;
+}
+
+.footer-contact-button-text {
+    font-family: var(--custom-font);
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.footer-contact-menu-button {
+    flex-wrap: nowrap;
+    align-items: center;
+    background: var(--black-color);
+    border: none;
+    border-radius: 120px;
+    text-decoration: none;
+    color: var(--white-color);
+    padding: 5px 5px 5px 30px;
+    column-gap: 20px;
+}
+
+/* Footer styles end */
